@@ -1,22 +1,23 @@
 public class Main {
     public static void main(String[] args) {
         // írd meg a person osztályt
+        Person first = new Person();
+        Person second = new Person();
+        Person third = new Person();
 
         // példányosísd 3 szor a persont
-        Person first = new Person(3);
-        Person second = new Person(4);
-        Person third = new Person(5);
+        System.out.println(Person.getPopular());
 
         // kérd le a statikus fieldet
-        System.out.println(first.getPopular());
+
 
         // példányosísd még 1 szer
-        Person fourth = new Person(6);
+        Person fourth = new Person();
 
         // kérd le a statikus fieldet
-        System.out.println(fourth.getPopular());
+        System.out.println(Person.getPopular());
 
         // hívd meg a katasztofa metódust
-        System.out.println(Person.getDisaster());
+        System.out.println(Person.getDisaster());;
     }
 }
